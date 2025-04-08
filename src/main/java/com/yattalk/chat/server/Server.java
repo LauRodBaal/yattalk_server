@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+import java.net.InetAddress;
 
 import com.yattalk.chat.model.ClientData;
 
