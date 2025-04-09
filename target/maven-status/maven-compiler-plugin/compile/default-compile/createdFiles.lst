@@ -1,0 +1,7 @@
+com/yattalk/chat/client/Client$ServerListener.class
+com/yattalk/chat/model/ClientData$1.class
+com/yattalk/chat/model/ClientData.class
+com/yattalk/chat/server/Server.class
+com/yattalk/chat/client/Client.class
+com/yattalk/chat/server/ClientHandler.class
+com/yattalk/chat/App.class
