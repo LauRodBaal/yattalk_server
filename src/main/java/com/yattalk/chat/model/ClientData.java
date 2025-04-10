@@ -24,13 +24,15 @@ public class ClientData {
 
     private Map<String, Map<String, List<Map<String, String>>>> loadData() {
         try (Reader reader = new FileReader(FILE_PATH)) {
-            return new Gson().fromJson(reader,
+            Map<String, Map<String, List<Map<String, String>>>> loadedData = new Gson().fromJson(reader,
                     new TypeToken<Map<String, Map<String, List<Map<String, String>>>>>() {
                     }.getType());
+            return loadedData != null ? loadedData : new HashMap<>();
         } catch (IOException e) {
             return new HashMap<>();
         }
     }
+
 
     public void saveData() {
         try (Writer writer = new FileWriter(FILE_PATH)) {
